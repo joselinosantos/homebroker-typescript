@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Negociações</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body class="container bg-homebroker text-white p-5">
+
+    <section>
+        <header class="mb-5">
+            <h1 class="text-center">Bolsa de Valores</h1>
+            <div id="mensagemView"></div>
+        </header>
+
+   <div class="card-deck">
+    <div class="card boleta bg-boleta p-4">
+        <header class="border-bottom mb-2">
+            <h4>BOLETA</h4>
+        </header>
+        <form class="form">
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="ativo">Ativo</label>
+                        <input type="text" id="ativo" class="form-control" required autofocus placeholder="BBS3" />
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" class="form-control" value="" required autofocus />
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="quantidade">Quantidade</label>
+                        <input type="number" min="1" step="1" id="quantidade" class="form-control" value="1"
+                            required />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="valor">Preço</label>
+                        <input id="valor" type="number" class="form-control" min="0.01" step="0.01" value="0.0"
+                            required />
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mt-4 ml-3 pt-2">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            A mercado
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mt-4 pt-2">
+                        <button class="btn btn-primary btn-block" type="submit">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="card bg-boleta p-4">
+        <header class="border-bottom mb-2">
+            <h4>NEGOCIAÇÕES</h4>
+        </header>
+
+        <div id="negociacoesView"></div>
+    </div>
+   </div>
+
+    </section>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

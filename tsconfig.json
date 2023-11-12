@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "dist/js",
+        "target": "ES6",
+        "noEmitOnError": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "strictNullChecks": true
+    },
+    "include": [
+        "app/**/*"
+    ]
+}
